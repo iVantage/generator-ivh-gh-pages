@@ -2,7 +2,7 @@
 var path = require('path')
   , yeoman = require('yeoman-generator')
   , chalk = require('chalk')
-  , yosay = require('yosay')
+  , yosay = require('yosay');
 
 var ucFirst = function(wrd) {
   return wrd.charAt(0).toUpperCase() + wrd.slice(1);
@@ -14,7 +14,7 @@ var prettify = function(name) {
     .map(function(n) {
       return n.length > 2 ? ucFirst(n) : n;
     })
-    .join(' ')
+    .join(' ');
 };
 
 var urlify = function(pretty) {
@@ -61,7 +61,7 @@ module.exports = yeoman.generators.Base.extend({
         name: 'siteUrl',
         message: 'What is the url for your project code?',
         default: 'https://github.com/' + props.ghName + '/' + urlify(props.projectName)
-      }]
+      }];
 
       this.prompt(prompts2, function(props2) {
         for(var p in props2) {

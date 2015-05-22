@@ -11,7 +11,7 @@
     "url": "https://github.com/iVantage"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "jshint app/*.js && jscs app/**/*.js && mocha"
   },
   "files": [
     "app"
