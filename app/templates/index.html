@@ -41,21 +41,8 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Nav header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
+              <li><a href="<%= siteUrl %>">Project Home</a></li>
+              <li><a href="<%= siteUrl %>/issues">Issues</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -67,12 +54,79 @@
       <div class="col-md-8 col-md-offset-2">
         <!-- Main component for a primary marketing message or call to action -->
         <div class="jumbotron">
-          <h1>Navbar example</h1>
-          <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-          <p>To see the difference between static and fixed top navbars, just scroll.</p>
+          <h1><%= projectName %></h1>
+          <p>Super. Awesome. Project.</p>
           <p>
-            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">See the code &raquo;</a>
+            <a class="btn btn-lg btn-primary" href="<%= siteUrl %>" role="button">Go to the code &raquo;</a>
           </p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h3>A Demo</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris
+              dolor, ornare ut posuere quis, suscipit sit amet eros. Nulla
+              hendrerit luctus metus, et tristique tellus lobortis at. Cras a
+              aliquam erat.
+            </p>
+            <p>
+              Nunc tellus orci, semper at porttitor nec, fringilla
+              nec felis. Nullam nec turpis mauris. Donec ullamcorper augue a
+              ligula elementum congue. Nullam viverra laoreet eleifend.
+            </p>
+          </div>
+          <div class="col-md-6">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#ex1_demo">Demo</a></li>
+              <li><a href="#ex1_code">Code</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane active" id="ex1_demo">
+                Demo!
+              </div>
+              <div class="tab-pane" id="ex1_code">
+<pre><code>Hello
+world
+</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#ex2_demo">Demo</a></li>
+              <li><a href="#ex2_code">Code</a></li>
+            </ul>
+
+            <div class="tab-content">
+              <div class="tab-pane active" id="ex2_demo">
+                Demo!
+              </div>
+              <div class="tab-pane" id="ex2_code">
+<pre><code>Hello
+world
+</code></pre>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h3>A Second Demo</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris
+              dolor, ornare ut posuere quis, suscipit sit amet eros. Nulla
+              hendrerit luctus metus, et tristique tellus lobortis at. Cras a
+              aliquam erat.
+            </p>
+            <p>
+              Nunc tellus orci, semper at porttitor nec, fringilla
+              nec felis. Nullam nec turpis mauris. Donec ullamcorper augue a
+              ligula elementum congue. Nullam viverra laoreet eleifend.
+            </p>
+          </div>
         </div>
 
         <footer class="text-muted">

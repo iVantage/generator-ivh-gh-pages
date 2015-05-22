@@ -4,3 +4,7 @@
  *
  * @copyright <%= date.year %> <%= ghName %>
  */
+
+.tab-content {
+  padding-top: 10px;
+}
