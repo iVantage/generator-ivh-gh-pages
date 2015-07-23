@@ -1,7 +1,7 @@
 
 # <%= projectName %>
 
-> GitHub pages for <$= projectName %>.
+> GitHub pages for <%= projectName %>.
 
 
 ## License
