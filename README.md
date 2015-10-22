@@ -7,7 +7,7 @@
 
 ```
 npm install -g yo
-npm install -g generator-ivh-gh-pages
+npm install -g ivantage/generator-ivh-gh-pages
 yo ivh-gh-pages
 ```
 
